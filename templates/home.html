@@ -16,6 +16,7 @@
                 <th scope="col">Location</th>
                 <th scope="col">Role</th>
                 <th scope="col">Hired Date</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -31,6 +32,11 @@
                     <td>{{e.dept.location}}</td>
                     <td>{{e.role.name}}</td>
                     <td>{{e.hired_date}}</td>
+                    <td>
+                      <button class="btn btn-primary">
+                        <a href="/delete-emp/{{e.id}}">Delete</a>
+                      </button>
+                    </td>
                 </tr>
               {% endfor %}
            

@@ -1,0 +1,39 @@
+{% extends 'basic.html' %}
+
+
+{% block body %}
+
+    <form class="container" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input name='first_name' type="text" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input name='last_name' type="text" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Salary</label>
+            <input name='salary' type="number" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Bonus</label>
+            <input name='bonus' type="number" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input name='phone' type="text" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Deptment</label>
+            <input name='dept' type="number" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Role</label>
+            <input name='role' type="number" class="form-control" >
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock body %}
